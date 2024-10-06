@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.search{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+}
+.search_logo{
+    max-width: 26px;
+    min-height: 26px;
+}
+
+.menu{
+    padding-top: 26px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+    max-height: 29px;
+}
+
+.header{
+    background-color: #f1e4e6;
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+.subtitle{
+    font-weight: 900;
+    font-size: 48px;
+    color: #222;
+    max-width: 377px;
+}
+
+.offer{
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    column-gap: 30px;
+    row-gap: 30px;
+    display: grid;
+    justify-content: center;
+    padding-bottom: 96px;
+}
+
+.products_title{
+    font-weight: 400;
+    font-size: 30px;
+    color: #222;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.products_subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    color: #9f9f9f;
+    text-align: center;
+}
+
+.items{
+    padding-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.info_subtitle{
+    font-weight: 400;
+    font-size: 13px;
+    color: #000;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #f8f8f8;
+    margin-bottom: 48px;
+}
+
+.info_text{
+    font-weight: 300;
+    font-size: 14px;
+    color: #5d5d5d
+}
+
+.info_price{
+    font-weight: 400;
+    font-size: 16px;
+    color: #f16d7f;
+}
+
+.button{
+    text-align: center;
+    padding-left: calc(50% - 100px);
+    padding-right: calc(50% - 100px);
+}
