@@ -161,3 +161,45 @@
      }
 
 }
+
+
+@media (max-width: 767px){
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .top{
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .menu_1{
+        display: none;
+    }
+
+    .man{
+        display: none;
+    }
+    .header{
+        min-height: 363px;
+    }
+    .subtitle{
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .offer{
+        grid-template-columns: repeat(1, 343px);
+        gap:20px;    
+    }
+    .img{
+        grid-column: 1 span;
+        grid-row: 1 span;
+        max-width: 343px;
+    }
+
+
+.items{
+    grid-template-columns: repeat(1, 359px); 
+    gap:8px;    
+}
+}
