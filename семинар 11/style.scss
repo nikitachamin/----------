@@ -2,13 +2,29 @@
     margin: 0;
     padding: 0;
 }
+.top__1{
+    overflow: hidden;
+    position: relative;
 
-.header_top {
+}
+.top {
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
     background-color: black;
     display: flex;
-    justify-content: space-between;
 }
 
+
+// #burger{
+//     position: absolute;
+//     left:-99999px;
+//     visibility: hidden;
+// }
+
+#burger:checked ~ .menu__1{
+   display: none;
+}
 .center{
     padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px);
@@ -18,93 +34,77 @@
     padding-top: 18px;
     padding-bottom: 18px;
     display: flex;
-    justify-content: space-around;
-    gap: 40px;
-    align-items: center;
+    gap: 40px;  
 }
+
+
 
 
 .menu{
     padding-top: 26px;
     padding-bottom: 20px;
     display: flex;
-    justify-content: center;
     gap: 33px;
 }
+.menu__1{
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    width: 232px;
+    box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+    background: #fff;
+    padding: 32px;
+    box-sizing: border-box;
+}
 
-.header_bot{
-    background-color: rgba(248, 243, 244, 1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 148px;
+
+.menu_heading{
    
-}
-
-.header_bot_text{
-    font-weight: 400;
-    font-size: 24px;
-    color: #f16d7f;
-}
-
-.bread_crumbs_link{
-    font-weight: 300;
-    font-size: 14px;
-    color: #636363;
-    
-}
-.bread_crumbs_link_site{
     font-weight: 700;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 24px;
+}
+.menu_subheading{
+    font-weight: 400;
+    font-size: 14px;
     color: #f16d7f;
-}
+    margin-bottom: 12px;
 
-.main_img{
-   width: 100%; 
 }
-
-.main{
-    background-color: #FFF;
-}
-
-.main_about{
-    border: 3px solid gray;
-    padding-top: 64px;
-    padding-bottom: 64px;
+.menu_ul{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 60px;
+    gap: 11px;
+    padding-left: 20px;
 }
-.main_about_h1{
-    font-weight: 400;
-    font-size: 14px;
-    color: #f16d7f;
-}
-.main_about_h2{
-    font-weight: 400;
-    font-size: 18px;
-    color: #4d4d4d;
-}
-.main_about_p{
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-    color: #5e5e5e;
-}
-.main_about_price{
-    font-weight: 400;
-    font-size: 24px;
-    color: #ef5b70;
-}
-
-.link__constructor{
+.menu_link{
     font-weight: 400;
     font-size: 14px;
     color: #6f6e6e;
+    text-decoration: none;
+}
+.menu_link:hover{
+    color: #f16d7f;
+}
+.header{
+    background-color: #f1e4e6;
+    display: flex;
+    justify-content: center;
 }
 
-
-
+.title{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+.subtitle{
+   text-align: start;
+    
+}
 .h1{
     font-weight: 900;
     font-size: 48px;
@@ -120,11 +120,32 @@
     font-size: 32px;
     color: #f16d7f;
 }
-
-.products{
-    margin-top: 122px;
-    margin-bottom: 122px;
+.offer{
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    column-gap: 30px;
+    row-gap: 30px;
+    display: grid;
+    justify-content: center;
+    padding-bottom: 96px;
 }
+
+.products_title{
+    font-weight: 400;
+    font-size: 30px;
+    color: #222;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.products_subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    color: #9f9f9f;
+    text-align: center;
+}
+
 .items{
     padding-top: 48px;
     display: grid;
@@ -213,7 +234,7 @@
   }
 .bot_sub {
     height: 458px;
-    background-image: url(../img/photo\ subscribe.svg);
+    background-image: url(img/photo\ subscribe.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
