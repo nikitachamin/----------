@@ -44,18 +44,31 @@
   font-size: 24px;
   color: #f16d7f;
 }
-
+.bread_crumbs{
+   display: flex;
+  
+}
 .bread_crumbs_link {
   font-weight: 300;
   font-size: 14px;
   color: #636363;
+  text-decoration: none;
+  
+ 
 }
-
-.bread_crumbs_link_site {
-  font-weight: 700;
+.bread_crumbs_link:hover{
   color: #f16d7f;
 }
 
+.breadcrumb__box:last-of-type .bread_crumbs_link{
+  font-weight: 700;
+  color: #f16d7f;
+}
+.breadcrumb__box:not(:last-child)::after{
+  content: '/';
+  padding-left: 8px;
+  padding-right: 8px;
+}
 .main {
   background-color: #FFF;
 }

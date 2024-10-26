@@ -47,135 +47,143 @@ summary::-webkit-details-marker {
   font-size: 24px;
   color: #F16D7F;
 }
-.header_bot_bread_crumbs_link {
-  text-decoration: none;
-  font-weight: 300;
-  font-size: 14px;
-  color: #636363;
-}
-.header_bot_bread_crumbs_link_site {
-  font-weight: 700;
-  color: #F16D7F;
+
+.main {
+  display: flex;
+  gap: 128px;
 }
 
-.filter-sort {
-  height: 132px;
-  position: relative;
-  padding-top: 39px;
-  box-sizing: border-box;
-  display: flex;
-  gap: 30px;
-}
-
-.filter {
-  padding-top: 13px;
-  width: 360px;
-  box-sizing: border-box;
-}
-.filter[open] {
-  background-color: #fff;
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-}
-.filter[open] .filter_heading {
-  color: #F16D7F;
-}
-.filter[open] path {
-  fill: #F16D7F;
-}
-.filter__content {
-  width: 327px;
-  position: absolute;
-  z-index: 1;
-  background-color: #fff;
-  padding: 0px 16px 16px;
-}
-.filter__summary {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  padding-left: 16px;
-}
-.filter_heading {
-  font-weight: 600;
-  font-size: 14px;
-  color: #000;
-}
-.filter__item {
-  margin-top: 16px;
-}
-.filter__head {
-  font-weight: 400;
-  font-size: 14px;
-  color: #6f6e6e;
-  padding: 8px 11px 11px 11px;
-  border-bottom: 1px solid #EBEBEB;
-  border-left: 5px solid #F16D7F;
-}
-.filter__item[open] .filter__head {
-  color: #F16D7F;
-}
-.filter__link-box {
+.main_left {
   display: flex;
   flex-direction: column;
-  gap: 11px;
-  padding: 24px 16px;
-}
-.filter__link {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 14px;
-  color: #6f6e6e;
-}
-.filter__link:hover {
-  color: #F16D7F;
-}
-
-.sort {
-  padding-top: 12px;
-  display: flex;
-  gap: 28px;
-}
-.sort__details {
-  position: relative;
-}
-.sort__summary {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-}
-.sort__heading {
-  font-weight: 400;
-  font-size: 14px;
-  color: #6f6e6e;
-}
-.sort__box {
-  box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
-  background-color: #fff;
-  padding: 7px 30px 11px 9px;
-  position: absolute;
-  top: 29px;
-  left: -9px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.sort__check {
-  display: flex;
-  gap: 9px;
-  font-weight: 400;
-  font-size: 14px;
-  color: #6f6e6e;
 }
 
 .items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.items_item {
+  margin-top: 96px;
   display: flex;
   flex-direction: column;
-  max-width: 360px;
+  gap: 40px;
+}
+
+.item {
+  padding-right: 97px;
+  box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+  max-width: 652px;
+  max-height: 306px;
+  display: flex;
+}
+.item_img {
+  max-width: 262px;
+}
+.item__about {
+  max-width: 262px;
+  margin-top: 21px;
+  margin-left: 31px;
+}
+.item__heading {
+  font-weight: 400;
+  font-size: 24px;
+  color: #222;
+}
+.item__info {
+  padding-top: 41px;
+  margin-left: 19px;
+  font-weight: 400;
+  font-size: 22px;
+  color: #575757;
+}
+.item__price {
+  color: #F16D7F;
+}
+.item__quantity {
+  border: 1px solid black;
+  width: 44px;
+  height: 25px;
+}
+
+.fetured-items__box-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+
+.button {
+  border: 1px solid #A4A4A4;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  text-decoration: none;
+  padding: 17px 39px 17px 39px;
+}
+
+.main__right {
+  padding-top: 113px;
+}
+
+.shipping_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shipping_form__input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 360px;
+}
+
+.shipping_form__heading {
+  font-weight: 300;
+  font-size: 16px;
+  color: #222;
+}
+
+.shipping_form__button {
+  width: 101px;
+  padding: 10px 15px;
+  font-weight: 300;
+  font-size: 11px;
+  color: #4a4a4a;
+}
+
+.proceed {
+  margin-top: 57px;
+  background-color: #F5F3F3;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+}
+.proceed_h1 {
+  font-weight: 400;
+  font-size: 11px;
+  color: #4a4a4a;
+}
+.proceed_h2 {
+  font-weight: 300;
+  font-size: 16px;
+  color: #222;
+}
+.proceed__price {
+  font-weight: 700;
+  color: #f16d7f;
+}
+.proceed__button {
+  width: 273px;
+  height: 50px;
+  background-color: #F16D7F;
+  border: none;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.3s;
 }
 
 .about {
@@ -324,6 +332,6 @@ summary::-webkit-details-marker {
 
 .text_footer {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   color: #fbfbfb;
 }/*# sourceMappingURL=style.css.map */
