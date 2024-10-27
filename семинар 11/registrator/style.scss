@@ -1,4 +1,4 @@
-@import 'vars';
+@import '_vars';
 
 * {
     margin: 0px;
@@ -55,217 +55,111 @@ summary {
     }
 
 }
-.main{
-    display: flex;
-    gap: 128px ;
-}
 
-.main_left{
+
+.content{
+    display: flex;
+    gap: 128px;
+    margin-top: 64px;
+    margin-bottom: 113px;
+}
+.forms{
+   
+    
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
-.items{
-    margin-top: 96px;
+.form{
     display: flex;
     flex-direction: column;
-    gap: 40px;
-}
-
-.item{
-    position: relative;
-    padding-right:97px;
-    box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
-    max-width: 652px;
-    max-height: 306px;
-    display: flex;
-
-    &_img{
-        max-width: 262px;
-    }
-    &__about{
+    gap:20px;
+    &__form{
         display: flex;
         flex-direction: column;
-        gap: 6px;
-        max-width: 262px;
-        margin-top: 21px;
-        margin-left: 31px;
-
+        gap: 20px;
     }
     &__heading{
-      
-        font-weight: 400;
-        font-size: 24px;
+        font-weight: 300;
+        font-size: 16px;
         color: #222;
     }
-    &__info{
-        padding-top: 41px;
-        margin-left: 19px;
-        
+    &__input{
+        font-weight: 300;
+        font-size: 13px;
+        color: #b1b1b1;
+        padding: 13px 16px;
+        width: 360px;
+        height: 45px;
+        box-sizing: border-box;
+       
+    }
+    &__gender{
+        display: flex;
+        gap: 20px;
+    }
+    &__radio{
+        font-weight: 300;
+        font-size: 11px;
+        color: #000;
+        display: flex;
     }
     &__text{
-        font-weight: 400;
-        font-size: 22px;
-        color: #575757;
-        &_select{
-            color: $selectedColor;
-        }
-        &_quantity{
-            display: flex;
-            gap:32px;
-        }
+        font-weight: 300;
+        font-size: 13px;
+        color: #b1b1b1;
+        width: 359px;
     }
-    &__number{
-        width: 44px;
-        height: 25px;
-        border: 1px solid #EAEAEA;
-        text-align: center;
-        font-weight: 400;
-        font-size: 18px;
-        color: #656565;
-    }
-    &__close{
-        position: absolute;
-        top:22px;
-        right: 28px;
-    }
-
 }
+.button {
+    padding: 16px 30px;
+    box-sizing: border-box;
+    width: 167px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    background-color: #f16d7f;
+    &:hover{
+         background-color: #b1b1b1;
+         color: #000;
+    }
 
-
+  }
 .fetured-items__box-button {
     display: flex;
     justify-content: space-between;
     margin-top: 72px;
   }
-  .button {
-    border: 1px solid #A4A4A4;
-    font-weight: 300;
-    font-size: 14px;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s;
-    text-decoration: none;
-    padding: 17px 39px 17px 39px;
-  }
-
-
-.main__right{
-    padding-top: 113px;
-}
-
-
-.shipping_form{
+  
+.info{
     display: flex;
     flex-direction: column;
-    gap:20px
-   
-}
-.shipping_form__input{
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    width: 360px;
-    box-sizing: border-box;
-
-}
-
-.shipping_form__heading{
-    font-weight: 300;
-    font-size: 16px;
-    color: #222;
-}
-.shipping_form__button{
-    width: 101px;
-    height: 35px;
-    font-weight: 300;
-    font-size: 11px;
-    color: #4a4a4a;
-    background-color:  #fff;
-    border-color: #A4A4A4;
-
-}
-.shipping_form__button:hover{
-    color: white;
-    background-color: #A4A4A4;
-}
-.shipping_form__form{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.proceed{
-    margin-top: 57px;
-    background-color: #F5F3F3;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 15px;
-
-   
-    &_h1{
-        font-weight: 400;
-        font-size: 11px;
-        color: #4a4a4a;
-    }
-    &_h2{
+    gap: 22px;
+    
+    &__heading{
         font-weight: 300;
-        font-size: 16px;
-        color: #222;
-        
+        font-size: 24px;
+        color: #000;
     }
-    &__price{
-        
-        font-weight: 700;
-        color: #f16d7f;
-
-    }
-    &__button{
-        width: 273px;
-        height: 50px;
-        background-color: #F16D7F;
-        border: none;
-        text-align: center;
+    &__text{
         font-weight: 300;
-        font-size: 16px;
-        color: #fff;
-        transition: all 0.3s;
-}
-}
-
-
-.about{
-    margin-top: 95px;
-    background-color:black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding-top: 103px;
-    padding-bottom: 103px;
-
-    &_info{
+        font-size: 24px;
+        color: #000;
+    }
+    &__about{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        max-width: 360px;
+        gap: 16px   ;
     }
-    &_title{
-        font-weight: 400;
-        font-size: 19px;
-        color: #fbfbfb;
-        text-align: center;
-    }
-    &_text{
+    &__list{
         font-weight: 300;
-        font-size: 13px;
-        color: #fbfbfb;
-        text-align: center;
+        font-size: 24px;
+        color: #000;
+        list-style-image: url(img/Vector.svg)
+
     }
+
 }
 
 .bot_sub {
