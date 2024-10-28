@@ -209,7 +209,7 @@ summary::-webkit-details-marker {
   text-align: center;
 }
 
-.bot_sub {
+.bot {
   height: 458px;
   background-image: url(../img/photo\ subscribe.svg);
   background-repeat: no-repeat;
@@ -326,4 +326,38 @@ summary::-webkit-details-marker {
   font-weight: 400;
   font-size: 16px;
   color: #fbfbfb;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .items {
+    gap: 16px;
+  }
+  .items_item_hide {
+    display: none;
+  }
+  .about {
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 65px;
+    gap: 30px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .bot {
+    max-height: 610px;
+    padding-top: 64px;
+    padding-bottom: 140px;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
