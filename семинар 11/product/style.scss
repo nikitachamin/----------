@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
   }
-  
+  body{
+    font-family: "Lato", serif;
+  }
   .header_top {
     background-color: black;
     display: flex;
@@ -72,49 +74,64 @@
     padding-right: 8px;
   }
   .main {
+    background-color: #F7F7F7;
+    height: 777px;
+    margin-bottom: 674px;
+    background-image: url(img/Layer\ 42.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 664px;
+    &__button{
+      
+      width: 47px;
+      height: 47px;
+      border-color: none;
+    }
+
     
   }
-  
+ 
   .main__img {
-    max-width: 100vw;
    
-    
+  
     
   }
   
   .main_about {
     padding-top: 64px;
-    padding-bottom: 64px;
     position: absolute;
-    top:860px;
+    right: calc((100vw / 2) - 570px);
+    top: 942px;
     background-color: #FFF;
     border: 3px solid gray;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
-    max-width: 1141px;
+    gap: 30px;
+    width: 1141px;
+    height: 601px;
   }
   
   .main_about_h1 {
     font-weight: 400;
     font-size: 14px;
     color: #f16d7f;
+   
   }
   
   .main_about_h2 {
     font-weight: 400;
     font-size: 18px;
     color: #4d4d4d;
+    padding-bottom: 16px;
   }
   
   .main_about_p {
-    max-width: 555px;
-    font-weight: 400;
+    max-width: 550px;
+    font-weight: 300;
     font-size: 14px;
     text-align: center;
     color: #5e5e5e;
@@ -124,12 +141,27 @@
     font-weight: 400;
     font-size: 24px;
     color: #ef5b70;
+    padding-bottom: 34px;
   }
-  
-  .link__constructor {
-    font-weight: 400;
-    font-size: 14px;
-    color: #6f6e6e;
+  .img__about{
+    max-width: 642px;
+   
+  }
+  .sort{
+    padding-top: 34px;
+    padding-bottom: 18px;
+    display: flex;
+    gap: 23px;
+    &__summary{
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+    &__heading{
+      font-weight: 400;
+      font-size: 14px;
+      color: #6f6e6e;
+    }
   }
   
   .h1 {
@@ -176,8 +208,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px 28px 20px 16px;
     background-color: #f8f8f8;
     margin-bottom: 48px;
   }
@@ -231,6 +262,8 @@
   .fetured-items__box-button {
     display: flex;
     justify-content: center;
+    padding-top: 18px;
+    padding-bottom: 34px;
   }
   
   .button {
@@ -238,9 +271,13 @@
     height: 48px;
     color: #F16D7F;
     display: flex;
-    justify-content: center;
+    gap: 23px;
     align-items: center;
+    text-decoration: none;
     transition: all 0.3s;
+    font-weight: 400;
+    font-size: 16px;
+    color: #f26376;
   }
   
   .button_all {
@@ -397,8 +434,9 @@
     .main_about{
       max-width: 100vw;
       position: unset;
-      padding: 64px 107px;
+      
     }
+    
     .about{
       flex-direction: column;
       gap:48px;
@@ -419,7 +457,8 @@
   }
   @media (max-width: 767px) {
     .center {
-   
+      padding-left: 9px;
+      padding-right: 9px;
     }
     .top {
       padding-right: 16px;
@@ -427,28 +466,73 @@
     }
     .menu_1 {
       display: none;
+      &_hide{
+        display: none;
+      }
     }
-    .man {
-      display: none;
-    }
+   
     .header {
-      min-height: 363px;
+      min-height: 148px;
+      &_bot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+      }
     }
     .subtitle {
       font-weight: 700;
       font-size: 20px;
     }
-    .offer {
-      grid-template-columns: repeat(1, 343px);
-      gap: 20px;
+    .img__about{
+      max-width: 175px;
     }
+   
     .img {
       grid-column: 1 span;
       grid-row: 1 span;
       max-width: 343px;
     }
+    .main_about{
+      position: unset;
+      box-sizing: border-box;
+      width: 601px;
+      height: 768px;
+      padding-right: 24px;
+      padding-left: 24px;
+      gap:15px;
+     
+    }
+
+    .sort__heading{
+      font-size: 10px;
+    }
     .items {
-      grid-template-columns: repeat(1, 359px);
-      gap: 8px;
+     display: flex;
+     flex-direction: column;
+     gap: 0px;
+     align-items: center;
+    }
+    .bot{
+      padding-bottom: 108px;
+      gap: 59px;
+      &_left{
+        max-width: 343px;
+      }
+      &_right{
+        max-width: 341px;
+      }
+    }
+    .bot_left_img{
+      max-width: 91px;
+    }
+    .text_review{
+      font-size: 18px;
+    }
+    .footer{
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 25px;
+      align-items: center;
     }
   }/*# sourceMappingURL=style.css.map */

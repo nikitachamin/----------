@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "open_sansitalic";
+  font-family: "Lato", serif;
 }
 
 summary {
@@ -71,6 +71,10 @@ summary::-webkit-details-marker {
   padding-top: 13px;
   width: 360px;
   box-sizing: border-box;
+}
+.filter_img {
+  width: 15px;
+  height: 10px;
 }
 .filter[open] {
   background-color: #fff;
@@ -176,6 +180,31 @@ summary::-webkit-details-marker {
   display: flex;
   flex-direction: column;
   max-width: 360px;
+}
+
+.info {
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 24px;
+  padding-left: 16px;
+  padding-bottom: 20px;
+}
+.info_subtititle {
+  font-weight: 400;
+  font-size: 13px;
+  color: #000;
+}
+.info_text {
+  font-weight: 300;
+  font-size: 14px;
+  color: #5d5d5d;
+}
+.info_price {
+  font-weight: 400;
+  font-size: 16px;
+  color: #f16d7f;
 }
 
 .about {
@@ -314,11 +343,10 @@ summary::-webkit-details-marker {
 }
 
 .footer {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  height: 79px;
   background-color: black;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -359,5 +387,78 @@ summary::-webkit-details-marker {
     flex-direction: column;
     gap: 48px;
     align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .menu_hide {
+    display: none;
+  }
+  .filter {
+    width: 100px;
+  }
+  .filter_head {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .filter_heading {
+    display: none;
+  }
+  .filter_img {
+    width: 37px;
+    height: 25px;
+  }
+  .sort {
+    gap: 23px;
+  }
+  .sort__summary {
+    gap: 9px;
+  }
+  .sort__heading {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .sort__heading_long {
+    width: 115px;
+  }
+  .header {
+    min-height: 148px;
+  }
+  .header_bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+  }
+  .items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bot {
+    padding-bottom: 108px;
+    gap: 59px;
+  }
+  .bot_left {
+    max-width: 343px;
+  }
+  .bot_right {
+    max-width: 341px;
+  }
+  .bot_left_img {
+    max-width: 91px;
+  }
+  .text_review {
+    font-size: 18px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 25px;
+    align-items: center;
+    padding-top: 43px;
+    padding-bottom: 23px;
   }
 }/*# sourceMappingURL=style.css.map */

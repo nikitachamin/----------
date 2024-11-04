@@ -91,7 +91,6 @@ summary::-webkit-details-marker {
 }
 .item__info {
   padding-top: 41px;
-  margin-left: 19px;
 }
 .item__text {
   font-weight: 400;
@@ -422,5 +421,117 @@ summary::-webkit-details-marker {
     flex-direction: column;
     gap: 48px;
     align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .menu_hide {
+    display: none;
+  }
+  .filter {
+    width: 100px;
+  }
+  .filter_head {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .filter_heading {
+    display: none;
+  }
+  .filter_img {
+    width: 37px;
+    height: 25px;
+  }
+  .sort {
+    gap: 23px;
+  }
+  .sort__summary {
+    gap: 9px;
+  }
+  .sort__heading {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .sort__heading_long {
+    width: 115px;
+  }
+  .header {
+    min-height: 148px;
+  }
+  .header_bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+  }
+  .items {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 59px;
+  }
+  .item {
+    box-sizing: border-box;
+    width: 358px;
+    height: 188px;
+  }
+  .item_img {
+    width: 143px;
+    height: 188px;
+  }
+  .item__about {
+    width: 214px;
+  }
+  .item__heading {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .item__text {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .item__close {
+    top: 17px;
+    right: 12px;
+  }
+  .item__close_img {
+    height: 9px;
+    width: 9px;
+  }
+  .main__right {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+  .button {
+    font-weight: 400;
+    font-size: 12px;
+    padding: 9px 17px 9px 17px;
+  }
+  .bot {
+    padding-bottom: 108px;
+    gap: 59px;
+  }
+  .bot_left {
+    max-width: 343px;
+  }
+  .bot_right {
+    max-width: 341px;
+  }
+  .bot_left_img {
+    max-width: 91px;
+  }
+  .text_review {
+    font-size: 18px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 25px;
+    align-items: center;
+    padding-top: 43px;
+    padding-bottom: 23px;
   }
 }/*# sourceMappingURL=style.css.map */
